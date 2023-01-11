@@ -5,16 +5,21 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  //Constructor
+  MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Expenses!"),
-      ),
-      body: Center(
-        child: Text("Something here"),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            "Expenses",
+            style: TextStyle(color: Colors.yellow),
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.green,
+        ),
       ),
     );
   }
